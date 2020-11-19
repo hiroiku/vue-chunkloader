@@ -9,6 +9,8 @@ Typically, off-screen images are loaded together, straining the loading of resou
 
 Vue ChunkLoader speeds up first view rendering by optimizing the order in which images are loaded. Once all the images in the chunk are loaded, the next chunk will be loaded.
 
+It will work best on long vertical pages, such as landing pages.
+
 ![Figure 1](https://user-images.githubusercontent.com/13102475/99713335-81e4ce80-2ae7-11eb-84c4-4e1dd8d0b28c.gif)
 
 ![Figure 2](https://user-images.githubusercontent.com/13102475/99713362-8e692700-2ae7-11eb-93c4-1899eb4602fd.gif)
