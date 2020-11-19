@@ -1,5 +1,10 @@
 # Vue ChunkLoader
 
+[![Test](https://github.com/hiroiku/vue-chunkloader/workflows/Test/badge.svg?branch=develop)](https://github.com/hiroiku/vue-chunkloader/actions?query=workflow%3ATest)
+[![Release](https://github.com/hiroiku/vue-chunkloader/workflows/Release/badge.svg)](https://github.com/hiroiku/vue-chunkloader/actions?query=workflow%3ARelease)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/0ee8da2a46234a91a4c462a9e76224f7)](https://www.codacy.com/gh/hiroiku/vue-chunkloader/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=hiroiku/vue-chunkloader&amp;utm_campaign=Badge_Grade)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Typically, off-screen images are loaded together, straining the loading of resources needed for the first view and causing a critical delay in the page loading experience.
 
 Vue ChunkLoader speeds up first view rendering by optimizing the order in which images are loaded. Once all the images in the chunk are loaded, the next chunk will be loaded.
