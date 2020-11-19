@@ -1,6 +1,12 @@
 {
   "name": "vue-chunkloader",
-  "version": "1.0.0",
+  "version": "1.0.4",
+  "description": "Vue ChunkLoader speeds up first view rendering by optimizing the order in which images are loaded.",
+  "keywords": [
+    "vue",
+    "image",
+    "optimize"
+  ],
   "author": {
     "name": "Hiroiku Inoue",
     "email": "work@hiroiku.me"
