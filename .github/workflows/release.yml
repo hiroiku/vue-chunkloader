@@ -18,6 +18,11 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
+          registry-url: https://registry.npmjs.org/
+
+      - run: npx can-npm-publish --verbose
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Cache node modules
         id: npm-cache
@@ -30,7 +35,8 @@ jobs:
 
       - run: npm install
       - run: npm run lint
-      - run: npm build
+      - run: npm run build:lib
+      - run: npm run build:type
 
       # Create Release
       - name: Create Release

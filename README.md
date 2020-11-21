@@ -2,7 +2,7 @@
 
 [![Test](https://github.com/hiroiku/vue-chunkloader/workflows/Test/badge.svg?branch=develop)](https://github.com/hiroiku/vue-chunkloader/actions?query=workflow%3ATest)
 [![Release](https://github.com/hiroiku/vue-chunkloader/workflows/Release/badge.svg)](https://github.com/hiroiku/vue-chunkloader/actions?query=workflow%3ARelease)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/0ee8da2a46234a91a4c462a9e76224f7)](https://www.codacy.com/gh/hiroiku/vue-chunkloader/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=hiroiku/vue-chunkloader&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/0ee8da2a46234a91a4c462a9e76224f7)](https://www.codacy.com/gh/hiroiku/vue-chunkloader/dashboard?utm_source=github.com&utm_medium=referral&utm_content=hiroiku/vue-chunkloader&utm_campaign=Badge_Grade)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Typically, off-screen images are loaded together, straining the loading of resources needed for the first view and causing a critical delay in the page loading experience.
@@ -32,7 +32,7 @@ Vue.use(VueChunkLoader);
 
 ## Usage
 
-Specifies the element to be chunked with the `v-chunk` directive.
+Specifies the element to be chunked with the `v-chunk` directive. Replace the `src` attribute in the chunk with the `data-src` attribute.
 
 ```html
 <template>
@@ -51,6 +51,23 @@ Specifies the element to be chunked with the `v-chunk` directive.
   </div>
 </template>
 ```
+
+## Options
+
+```ts
+import Vue from 'vue';
+import VueChunkLoader from 'vue-chunkloader';
+
+Vue.use(VueChunkLoader, {
+  className: 'v-chunk',
+  attribute: 'data-src',
+});
+```
+
+| Property  | Type   | Default  | Description                                           |
+| :-------- | :----- | :------- | :---------------------------------------------------- |
+| className | String | v-chunk  | Class name to be given to the chunk                   |
+| attribute | String | data-src | Custom data attributes to replace the `src` attribute |
 
 ## License
 

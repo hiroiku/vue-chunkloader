@@ -1,6 +1,6 @@
 {
   "name": "vue-chunkloader",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Vue ChunkLoader speeds up first view rendering by optimizing the order in which images are loaded.",
   "keywords": [
     "vue",
@@ -28,7 +28,6 @@
   "files": [
     "dist"
   ],
-  "dependencies": {},
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.33.0",
     "@typescript-eslint/parser": "^2.33.0",
