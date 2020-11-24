@@ -11,6 +11,14 @@
     "name": "Hiroiku Inoue",
     "email": "work@hiroiku.me"
   },
+  "homepage": "https://github.com/hiroiku/vue-chunkloader",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hiroiku/vue-chunkloader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hiroiku/vue-chunkloader/issues"
+  },
   "license": "MIT",
   "private": false,
   "scripts": {
